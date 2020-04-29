@@ -269,3 +269,79 @@ Object.defineProperty(o, "b", {
 * `bind`后的`function`：跟原来的函数相关联
 
 ----
+# JavaScript 标准里所有的对象
+
+## Built-in Exotic Object Internal Methods and Slots
+
+### Bound Function Exotic Objects
+
+* [[BoundTargetFunction]]
+* [[BoundThis]]
+* [[BoundArguments]]
+* [[Call]]
+* [[Construct]]
+* [[BoundFunctionCreate]]
+
+### Array Exotic Objects
+
+* [[DefineOwnProperty]] 
+* [[ArrayCreate]] 
+* [[ArraySpeciesCreate]] 
+* [[ArraySetLength]] 
+
+### String Exotic Objects
+
+### [[GetOwnProperty]]
+* [[DefineOwnProperty]]
+* [[OwnPropertyKeys]]
+* StringCreate
+* StringGetOwnProperty
+
+### Arguments Exotic Objects
+
+* [[GetOwnProperty]]
+* [[DefineOwnProperty]]
+* [[Get]]
+* [[Set]]
+* [[Delete]]
+* CreateUnmappedArgumentsObject
+
+### CreateMappedArgumentsObject
+
+*  MakeArgGetter
+*  MakeArgSetter
+
+### Integer-Indexed Exotic Objects
+
+* [[GetOwnProperty]]
+* [[HasProperty]]
+* [[DefineOwnProperty]]
+* [[Get]]
+* [[Set]]
+* [[OwnPropertyKeys]] 
+* IntegerIndexedObjectCreate 
+* IntegerIndexedElementGet
+* IntegerIndexedElementSet
+
+### Module Namespace Exotic Objects
+
+* [[Module]]
+* [[Exports]]
+* [[Prototype]]
+* [[SetPrototypeOf]]
+* [[IsExtensible]
+* [[PreventExtensions]]
+* [[GetOwnProperty]]
+* [[DefineOwnProperty]] 
+* [[HasProperty]]
+* [[Get]]
+* [[Set]]
+* [[Delete]]
+* [[OwnPropertyKeys]]
+* ModuleNamespaceCreate
+* [[Delete]]
+
+### Immutable Prototype Exotic Objects
+
+* [[SetPrototypeOf]]
+* SetImmutablePrototype
