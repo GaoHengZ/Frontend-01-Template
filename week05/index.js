@@ -3,7 +3,6 @@ const HttpRequest = require("./Request");
 const request = new HttpRequest({
 	port : "8880",
 	host : "127.0.0.1",
-	path : "/getData",
 	method : "GET",
 	body : {
 		name : "custom"
